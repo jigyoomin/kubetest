@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: earth-test-deployment
+  labels:
+    app: earth-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: earth-test
+  template:
+    metadata:
+      labels:
+        app: earth-test
+    spec:
+      containers:
+      - name: earth-test
+        image: earth1223/earth-test:1.0
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+  strategy:
+    type: RollingUpdate
