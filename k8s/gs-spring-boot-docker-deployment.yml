@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: earth-test
-        image: earth1223/earth-test:1.0
+        image: earth1223/earth-test:a46b7597f29
         ports:
         - containerPort: 8080
         imagePullPolicy: Always

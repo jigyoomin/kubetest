@@ -13,7 +13,7 @@ public class Application {
 	public String home() {
 		// 1
 		// 2
-		return "Hello Kubernetes World 1";
+		return "Hello Kubernetes World 2";
 	}
 	
 	public static void main(String[] args) {
