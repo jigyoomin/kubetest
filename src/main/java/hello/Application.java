@@ -11,9 +11,7 @@ public class Application {
 	
 	@GetMapping("/")
 	public String home() {
-		// 1
-		// 2
-		return "Hello Kubernetes World 3";
+		return "Hello Kubernetes World 4";
 	}
 	
 	public static void main(String[] args) {
