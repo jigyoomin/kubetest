@@ -11,7 +11,7 @@ public class Application {
 	
 	@GetMapping("/")
 	public String home() {
-		return "Hello Kubernetes World";
+		return "Hello ICP World";
 	}
 	
 	public static void main(String[] args) {
